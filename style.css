@@ -5,7 +5,7 @@
 }
 
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*____*/
 
 
 .navbar {
@@ -18,19 +18,19 @@
 }
 
 
-/*@@@@@@@@@@@@@@@ box1 @@@@@@@@@@@@@@@@@@*/
+/* box1 */
 
 .nav_logo {
     height: 55px;
     width: 100px;
 }
 
-.logo {
+/* .logo {
     background-image: url("amazon_logo.jpg");
     background-size: cover;
     height: 50px;
     width: 100%;
-}
+} */
 
 .border {
     border: 2px solid transparent;
@@ -40,7 +40,7 @@
     border: 2px solid white;
 }
 
-/*@@@@@@@@@@@@@@@@ box2 @@@@@@@@@@@@@@@@@@*/
+/* box2 */
 
 
 .add_first {
@@ -59,7 +59,7 @@
     align-items: center;
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@ box3 @@@@@@@@@@@@@@@@@@@@@@@*/
+/* box3 */
 
 
 .nav_search {
@@ -103,7 +103,7 @@
     color: #0F1111;
 }
 
-/*@@@@@@@@@@@@@@@@@ box4 @@@@@@@@@@@@@@@@@@@*/
+/* box4 */
 
 
 .flag {
@@ -125,7 +125,7 @@
     height: 20px;
 }
 
-/*@@@@@@@@@@@@@@@@ box5 @@@@@@@@@@@@@@@@@@@@@*/
+/* box5 */
 
 
 span {
@@ -137,7 +137,7 @@ span {
     font-weight: 700;
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@ box6 @@@@@@@@@@@@@@@@@@@@*/
+/* box6 */
 
 
 .nav_cart i {
@@ -149,7 +149,7 @@ span {
     font-weight: 700;
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@ Panel @@@@@@@@@@@@@@@@@@@@*/
+/* Panel */
 
 
 .panel {
@@ -174,7 +174,7 @@ span {
 
 
 
-/*@@@@@@@@@@@@@@@@ Hero Slider @@@@@@@@@@@@@@@@@@@*/
+/* Hero Slider */
 
 
 .slider {
@@ -186,7 +186,7 @@ span {
 }
 
 
-/*@@@@@@@@@@@@@@@@@@@ Hero Section @@@@@@@@@@@@@@@@@@@@@*/
+/* Hero Section */
 
 
 .btn {
@@ -211,7 +211,7 @@ span {
     right: 20px;
 }
 
-/*@@@@@@@@@@@@@@@@@@@@ shop section @@@@@@@@@@@@@@@@@@@@@*/
+/* shop section */
 
 .shop_section {
     display: grid;
@@ -266,11 +266,12 @@ span {
 }
 
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ______ */
 
 .box2 .box_img {
     width: 100%;
     height: 200px;
+
     /* image size control */
     background-size: cover;
     background-position: center;
@@ -281,10 +282,10 @@ span {
 
 
 
-/* @@@@@@@@@@@@@@@@@@ Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Footer  */
 
 .footer {
-    margin-top: 15px;
+    margin-top:15px;
 }
 
 .foot_pan1 {
@@ -301,7 +302,7 @@ span {
 .foot_pan2 {
     color: white;
     background-color: #222f3D;
-    height: 400px;
+    height: 280px;
     display: flex;
     justify-content: space-evenly;
 
@@ -350,7 +351,7 @@ ul {
 .foot_pan4 {
     background-color: #0F1111;
     color: #CCCCCC;
-    height: 150px;
+    height: 90px;
     font-size: 0.7rem;
     text-align: center;
 
@@ -370,3 +371,260 @@ ul {
 .copyright {
     padding-top: 10px;
 }
+
+
+/*  Responsive  */
+
+@media (max-width:768px){
+
+    .foot_pan2{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:25px;
+        height:auto !important;
+    }
+
+    .foot_pan2 ul{
+        margin-top:0;
+        width:100%;
+    }
+
+    .foot_pan3,
+    .foot_pan4{
+        height:auto !important;
+        min-height:auto;
+    }
+
+    footer{
+        overflow:visible;
+    }
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    .shop_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav_search {
+        width: 90%;
+    }
+
+    .foot_pan2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav_logo,
+    .nav-address,
+    .flag,
+    .nav_signin,
+    .nav_return,
+    .nav_cart {
+        width: auto;
+    }
+
+    .nav_search {
+        width: 100%;
+        order: 100;
+    }
+
+    /* Panel */
+
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .panel_option {
+        width: 100%;
+        text-align: center;
+    }
+
+    .panel_option p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Hero Slider */
+
+    .slider {
+        height: 250px;
+    }
+
+    .btn {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+
+    /* Shop Section */
+
+    .shop_section {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .item {
+        height: 140px;
+    }
+
+    .box2 .box_img {
+        height: 250px;
+    }
+
+    /* Footer */
+
+  /* Footer */
+
+.foot_pan2{
+    color:white;
+    background:#222f3D;
+    display:flex;
+    justify-content:space-evenly;
+    padding:30px 20px;
+}
+
+ul{
+    margin-top:20px;
+    font-weight:650;
+}
+
+.foot_pan3{
+    background:#222f3D;
+    color:white;
+    border-top:0.5px solid white;
+    min-height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+
+.foot_pan4{
+    background:#0F1111;
+    color:#CCCCCC;
+    min-height:150px;
+    font-size:0.7rem;
+    text-align:center;
+    padding:20px;
+}
+} 
+
+/* Small Mobile */
+
+.small-screen-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 10px 10px 10px;
+        background-color: #374758;
+        color:white;
+        justify-content: right;
+        font-size: 0.8rem;
+
+    }
+
+
+.small-screen-icon i {
+      color:gray;
+
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-bar span {
+        width: 30px;
+        height: 3px;
+        background: #000;
+        display: block;
+    }
+
+@media screen and (min-width: 481px) {
+    .small-div{
+        display: none;
+   
+    }
+}  
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+        height: 45px;
+    }
+
+    .search_select {
+        width: 45px;
+    }
+
+    .search_input {
+        font-size: 14px;
+    }
+
+    .search_icon {
+        width: 40px;
+    }
+
+    .slider {
+        height: 180px;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    .box h2 {
+        font-size: 15px;
+    }
+
+    .item {
+        height: 100px;
+    }
+
+    .box2 .box_img {
+        height: 180px;
+    }
+
+    .foot_pan2 ul {
+        margin-top: 20px;
+    }
+}
+
+
+
